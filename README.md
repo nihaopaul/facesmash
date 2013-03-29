@@ -1,4 +1,4 @@
-    ![inyourface](https://github.com/nihaopaul/facesmash/raw/master/img/IMG_20130330_014757.jpg "in your face")
+![inyourface](https://github.com/nihaopaul/facesmash/raw/master/img/IMG_20130330_014757.jpg "in your face")
 
 great what you can do in an hour.
 
