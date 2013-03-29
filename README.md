@@ -1,6 +1,4 @@
-<div style="float:left;margin:0 10px 10px 0" markdown="1">
-    ![inyourface](https://github.com/nihaopaul/facesmash/raw/master/img/IMG_20130330_014757.jpg)
-</div>
+    ![inyourface](https://github.com/nihaopaul/facesmash/raw/master/img/IMG_20130330_014757.jpg "in your face")
 
 great what you can do in an hour.
 
