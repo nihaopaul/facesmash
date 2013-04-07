@@ -18,8 +18,8 @@ void setup() {
   pinMode(m1[1], OUTPUT);
   pinMode(m2[0], OUTPUT); 
   pinMode(m2[1], OUTPUT);
-  firepin.attach(8);
-  firepin.write(90);
+
+  fire(90);
   pinMode(wakePin, INPUT);
   attachInterrupt(0, wakeUpNow, HIGH); // use interrupt 0 (pin 2) and run function
   Serial.begin(9600);
@@ -41,9 +41,10 @@ void loop() {
     Serial.println("starting motors");
     fire_start();
   }
-  if (count ==10) {
+  if (count ==5) {
     Serial.println("BALLS EYE!");
-    fire();
+    fire(140);
+    fire(90);
     to_sleep();
   }
 }
@@ -137,10 +138,11 @@ void fire_stop() {
   digitalWrite(m2[1],LOW); 
 }
 
-void fire() {
-  firepin.write(150);
-  delay(250);
-  firepin.write(90);
+void fire(int amount) {
+  firepin.attach(8);
+  firepin.write(amount);
+  delay(270);
+  firepin.detach();
 }
 
 
